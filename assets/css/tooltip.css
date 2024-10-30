@@ -1,0 +1,15 @@
+/**Tool Tip**/
+.wilo-tooltip{width:16px;height:16px;position: relative;display:inline-block;vertical-align:middle !important;cursor:pointer;z-index:9999999;text-transform:none !important;margin-left:3px !important;border:1px solid #212121 !important;line-height:1 !important;font-size:0 !important;color:#212121 !important;border-radius:100px !important;}
+.wilo-tooltip:before{content:'i';position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);font-size:13px !important;font-family:"Times New Roman" !important;display:block !important;color:inherit !important;font-weight:bold !important;}
+
+/**Tool tip area**/
+.wilo-tooltip-area, .wilo .wilo-tooltip-area{position:fixed !important;z-index:999999999999999999999 !important;background:#ffffff !important;border:1px solid #e0e1e9 !important;color:#000000 !important;width:500px !important;border-radius:5px !important;transform:translate(10px, calc(-100% - 10px)) !important;display:none !important;box-shadow:0 1px 12px #191b2326 !important;font-size:13px !important;}
+.wilo-tooltip-area.reversed{transform:translate(calc(-100% - 10px), calc(-100% - 10px)) !important;}
+.wilo-tooltip-area.reversed-vertical{transform:translate(10px, 10px) !important}
+.wilo-tooltip-area.reversed.reversed-vertical{transform:translate(calc(-100% - 10px), 10px) !important;}
+.wilo-tooltip-area.active{display:grid !important;grid-template-columns:1fr 1fr !important;}
+.wilo-tooltip-area .wilo-col{padding:20px !important;}
+.wilo-tooltip-area .wilo-col .wilo-tooltip-content{font-size:13px !important;line-height:1.4 !important;}
+.wilo-tooltip-area .wilo-col.wilo-fix{background:#f9f9f9 !important;}
+.wilo-tooltip-area .wilo-col.wilo-notice{grid-column:span 2 !important;}
+.wilo-tooltip-area .wilo-tooltip-title{font-weight:bold !important;font-size:18px !important;margin-bottom:5px !important;}
